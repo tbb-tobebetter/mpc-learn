@@ -6,13 +6,27 @@
 --Michele Ciampi and Rafail Ostrovsky and Hendrik Waldner and Vassilis Zikas
 https://eprint.iacr.org/2020/1437.pdf
 
+  介绍：We provide two round-preserving black-box compiler. By using our first compiler with a round-optimal MPC, we derive the first round-optimal and
+circuit-scalable maliciously secure MPC in the plain model.
+  By using this second compiler with a round-optimal MPC, we derive the first round-optimal and circuit-independent maliciously secure MPC in the plain model.
+  Our compilers assume the existence of four-round maliciously secure oblivious transfer which can be obtained from standard cryptographic assumptions.  
+
 2、Towards Multiparty Computation Withstanding Coercion of All Parties
 --Ran Canetti and Oxana Poburinnaya
 https://eprint.iacr.org/2020/1434.pdf
 
+  介绍：We consider, for the first time, the setting where all parties are coerced（被强制）, and the coercer expects to see the entire history of the computation.
+  model:common reference string which is generated once and for all by an uncorruptable trusted party
+  • A general multi-party function evaluation protocol, for any number of parties, that withstands coercion of all parties, as long as all parties use the prescribed “faking algorithm” upon coercion. 
+  • A general two-party function evaluation protocol that withstands even the case where some of the coerced parties do follow the prescribed faking algorithm. 
+  when instantiated using the fully deniable encryption of Canetti, Park, and Poburinnaya [Crypto’20], it takes 3 rounds of communication.
+
 3、Constant-Overhead Unconditionally Secure Multiparty Computation over Binary Fields
 --Antigoni Polychroniadou and Yifan Song
 https://eprint.iacr.org/2020/1412.pdf
+
+  介绍：there are no n-party protocols with constant overhead admitting communication complexity of O(n) bits per gate.
+  In this work, we construct the first unconditional MPC protocol secure against a malicious adversary in the honest majority setting evaluating just a single boolean circuit with amortized communication complexity of O(n) bits per gate.
 
 4、Post-Quantum Multi-Party Computation
 --Amit Agarwal and James Bartusek and Vipul Goyal and Dakshita Khurana and Giulio Malavolta
